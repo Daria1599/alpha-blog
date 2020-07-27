@@ -9,4 +9,11 @@ class ApplicationController < ActionController::Base
     def logged_in?
         !!current_user # уточняет если current_user is true
     end
+
+    def require_user # метод уточняет залогинен ли юзер (если этот метод добавлен в действие то действие не будет сделано)
+        if !logged_in?
+            flash[:alert] = "You must be logged in to perform that action"
+            redirect_to login_path
+        end
+    end
 end
