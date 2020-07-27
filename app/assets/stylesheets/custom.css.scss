@@ -32,14 +32,18 @@ body {
   height: 100%;
 }
 
-#page-content {
+#page-container {
   flex: 1 0 auto;
   background-color: lightgray;
+}
+#page-content {
+  min-height: 500px;
 }
 
 #sticky-footer {
   flex-shrink: none;
   background-color: black !important;
+  height: 70px;
 }
 
 /* pagination styling */
