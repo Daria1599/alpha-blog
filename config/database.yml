@@ -1,4 +1,4 @@
-development:
+default: &default 
   adapter: mysql2
   encoding: utf8
   database: alpha-blog
@@ -6,3 +6,15 @@ development:
   password: ''
   host: 127.0.0.1
   port: 3306
+
+development:
+  <<: *default
+  database: alpha-blog
+
+test:
+  <<: *default
+  database: alpha-blog
+
+production:
+  <<: *default
+  database: alpha-blog
