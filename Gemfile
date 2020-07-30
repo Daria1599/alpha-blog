@@ -7,7 +7,7 @@ ruby '2.7.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use mysql2 as the database for Active Record
 group :development, :test do
-  gem 'mysql2'
+  gem 'mysql2', '>= 0.4.4'
 end
 
 group :production do
