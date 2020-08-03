@@ -19,7 +19,6 @@ class ArticlesController < ApplicationController
     end
 
     def create 
-        byebug
     @article = Article.new(set_params)
     @article.user = current_user # новая статья будет присуждена current юзеру
     if @article.save
