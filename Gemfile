@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'mysql2', '>= 0.5.3'
+  gem 'mysql2', '>= 0.4.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
